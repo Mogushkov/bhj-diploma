@@ -29,7 +29,7 @@ class UserWidget {
     if (!user){
       return;
     }
-    const name = this.element.querySelector( '.user-name' );
+    const name = this.element.querySelector('.user-name');
     name.textContent = user.name;
   }
 }

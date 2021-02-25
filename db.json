@@ -1,0 +1,745 @@
+{
+  "users": [
+    {
+      "name": "demo",
+      "email": "demo@demo.ru",
+      "password": "demo",
+      "id": "1"
+    },
+    {
+      "name": "Gap",
+      "email": "Gap@Gap",
+      "password": "gap",
+      "id": "50guwb3ckle4ojgw"
+    },
+    {
+      "name": "gapur",
+      "email": "gapur@gapur.ru",
+      "password": "demo",
+      "id": "50guwe9okli7n4fi"
+    },
+    {
+      "name": "gap",
+      "email": "gap@gap.ru",
+      "password": "gap",
+      "id": "50guw8icklij2iqd"
+    },
+    {
+      "name": "Jonny Mnemonnik",
+      "email": "jon@jon.ru",
+      "password": "demo",
+      "id": "50guwbwwkllbzhqr"
+    }
+  ],
+  "accounts": [
+    {
+      "name": "Банк",
+      "user_id": "1",
+      "id": "1"
+    },
+    {
+      "name": "Магазин",
+      "user_id": "1",
+      "id": "2"
+    },
+    {
+      "name": "Бизнес",
+      "user_id": "1",
+      "id": "3"
+    },
+    {
+      "name": "new",
+      "user_id": "50guwe9okli7n4fi",
+      "id": "50guwdk4kllbxbow"
+    },
+    {
+      "name": "BANK",
+      "user_id": "50guwbwwkllbzhqr",
+      "id": "50guw8yskllbzqcj"
+    },
+    {
+      "name": "FUN",
+      "user_id": "50guwbwwkllbzhqr",
+      "id": "50guw1yokllc48wb"
+    },
+    {
+      "name": "WORK",
+      "user_id": "1",
+      "id": "50guw6eskllcku7k"
+    },
+    {
+      "name": "Jonny Mnemonnik",
+      "user_id": "1",
+      "id": "50guw7kskllctved"
+    },
+    {
+      "name": "new1",
+      "user_id": "1",
+      "id": "50guw5k8kllh1pb0"
+    },
+    {
+      "name": "new2",
+      "user_id": "1",
+      "id": "50guw8b4kllh7jf6"
+    }
+  ],
+  "transactions": [
+    {
+      "account_id": "1",
+      "created_at": "2019-09-15 10:24:02",
+      "id": "1",
+      "name": "Кредит",
+      "sum": 5000,
+      "type": "expense",
+      "user_id": "1"
+    },
+    {
+      "account_id": "1",
+      "created_at": "2019-09-17 15:53:02",
+      "id": "2",
+      "name": "Баланс на дебетовке",
+      "sum": 3200,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "1",
+      "created_at": "2019-09-19 20:12:02",
+      "id": "3",
+      "name": "Копилка",
+      "sum": 1500,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "2",
+      "created_at": "2019-09-26 16:23:02",
+      "id": "4",
+      "name": "Молочные продукты",
+      "sum": 100,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "2",
+      "created_at": "2019-09-25 15:03:02",
+      "id": "5",
+      "name": "Фрукты",
+      "sum": 250,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "2",
+      "created_at": "2019-09-25 15:03:02",
+      "id": "17",
+      "name": "Овощи",
+      "sum": 300,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "2",
+      "created_at": "2019-09-26 14:47:02",
+      "id": "6",
+      "name": "Мясо",
+      "sum": 600,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "2",
+      "created_at": "2019-09-27 13:27:02",
+      "id": "7",
+      "name": "Долг в банк",
+      "sum": 5000,
+      "type": "expense",
+      "user_id": "1"
+    },
+    {
+      "account_id": "3",
+      "created_at": "2017-10-15 13:27:02",
+      "id": "9",
+      "name": "На банду",
+      "sum": 15000,
+      "type": "expense",
+      "user_id": "1"
+    },
+    {
+      "account_id": "3",
+      "created_at": "2017-09-17 13:27:02",
+      "id": "10",
+      "name": "На стволы",
+      "sum": 6000,
+      "type": "expense",
+      "user_id": "1"
+    },
+    {
+      "account_id": "3",
+      "created_at": "2017-12-27 13:27:02",
+      "id": "11",
+      "name": "Прибыль с банка",
+      "sum": 1500000,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "3",
+      "created_at": "2018-01-15 13:27:02",
+      "id": "12",
+      "name": "Прибыль с магазина",
+      "sum": 300000,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "3",
+      "created_at": "2018-01-15 13:27:02",
+      "id": "13",
+      "name": "Подарок сизого",
+      "sum": 20000,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "3",
+      "created_at": "2017-09-15 13:27:02",
+      "id": "14",
+      "name": "На охрану",
+      "sum": 60000,
+      "type": "expense",
+      "user_id": "1"
+    },
+    {
+      "account_id": "3",
+      "created_at": "2017-10-15 13:27:02",
+      "id": "15",
+      "name": "На бумер",
+      "sum": 300000,
+      "type": "expense",
+      "user_id": "1"
+    },
+    {
+      "id": "50guwd1gkllby0ub",
+      "type": "income",
+      "name": "new",
+      "sum": 100,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T20:39:23.842Z"
+    },
+    {
+      "id": "50guwc0gkllbygli",
+      "type": "expense",
+      "name": "new",
+      "sum": 170,
+      "account_id": "2",
+      "user_id": "1",
+      "created_at": "2021-02-25T20:39:44.261Z"
+    },
+    {
+      "id": "50guw93gkllbzzt6",
+      "type": "income",
+      "name": "WORK",
+      "sum": 1500,
+      "account_id": "50guw8yskllbzqcj",
+      "user_id": "50guwbwwkllbzhqr",
+      "created_at": "2021-02-25T20:40:55.817Z"
+    },
+    {
+      "id": "50guw6e8kllc9f5e",
+      "type": "income",
+      "name": "FUNFUN",
+      "sum": 1000000,
+      "account_id": "50guw1yokllc48wb",
+      "user_id": "50guwbwwkllbzhqr",
+      "created_at": "2021-02-25T20:48:15.601Z"
+    },
+    {
+      "id": "50guw298kllc9ych",
+      "type": "expense",
+      "name": "FUNFUN",
+      "sum": 500000,
+      "account_id": "50guw1yokllc48wb",
+      "user_id": "50guwbwwkllbzhqr",
+      "created_at": "2021-02-25T20:48:40.480Z"
+    },
+    {
+      "id": "50guw3awkllcaare",
+      "type": "expense",
+      "name": "FUNFUN",
+      "sum": 500000,
+      "account_id": "50guw1yokllc48wb",
+      "user_id": "50guwbwwkllbzhqr",
+      "created_at": "2021-02-25T20:48:56.569Z"
+    },
+    {
+      "id": "50guwabgkllcgima",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "50guw1yokllc48wb",
+      "user_id": "50guwbwwkllbzhqr",
+      "created_at": "2021-02-25T20:53:46.689Z"
+    },
+    {
+      "id": "50guw2jskllcimvm",
+      "type": "expense",
+      "name": "new",
+      "sum": 100,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T20:55:25.521Z"
+    },
+    {
+      "id": "50guwdzckllcl2xg",
+      "type": "income",
+      "name": "new",
+      "sum": 50000,
+      "account_id": "50guw6eskllcku7k",
+      "user_id": "1",
+      "created_at": "2021-02-25T20:57:19.635Z"
+    },
+    {
+      "id": "50guwclgkllcld5l",
+      "type": "expense",
+      "name": "WORK",
+      "sum": 1500,
+      "account_id": "50guw6eskllcku7k",
+      "user_id": "1",
+      "created_at": "2021-02-25T20:57:32.888Z"
+    },
+    {
+      "id": "50guw5r0kllcnkiz",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "50guw6eskllcku7k",
+      "user_id": "1",
+      "created_at": "2021-02-25T20:59:15.754Z"
+    },
+    {
+      "id": "50guw6i8kllcowgd",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "50guw6eskllcku7k",
+      "user_id": "1",
+      "created_at": "2021-02-25T21:00:17.868Z"
+    },
+    {
+      "id": "50guw5g4kllcsa8q",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "50guw6eskllcku7k",
+      "user_id": "1",
+      "created_at": "2021-02-25T21:02:55.705Z"
+    },
+    {
+      "id": "50guwygkllcu3l8",
+      "type": "expense",
+      "name": "Jonny Mnemonnik",
+      "sum": 1500,
+      "account_id": "50guw6eskllcku7k",
+      "user_id": "1",
+      "created_at": "2021-02-25T21:04:20.395Z"
+    },
+    {
+      "id": "50guw8g0klld2nxq",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T21:11:00.013Z"
+    },
+    {
+      "id": "50guwef0klld44r8",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T21:12:08.467Z"
+    },
+    {
+      "id": "50guwb9gklld4s25",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T21:12:38.668Z"
+    },
+    {
+      "id": "50guw550klld74dm",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T21:14:27.946Z"
+    },
+    {
+      "id": "50guw30cklld9knf",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T21:16:22.346Z"
+    },
+    {
+      "id": "50guwdq4klldpzgl",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T21:29:08.036Z"
+    },
+    {
+      "id": "50guw3d8klldqf09",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T21:29:28.184Z"
+    },
+    {
+      "id": "50guwicklldxcmy",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T21:34:51.705Z"
+    },
+    {
+      "id": "50guwae8klle2bdm",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T21:38:43.353Z"
+    },
+    {
+      "id": "50guwbroklle39o1",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T21:39:27.792Z"
+    },
+    {
+      "id": "50guw690klle5jd1",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T21:41:13.668Z"
+    },
+    {
+      "id": "50guw8csklle5pfb",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T21:41:21.526Z"
+    },
+    {
+      "id": "50guw72kklle6yx9",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T21:42:20.492Z"
+    },
+    {
+      "id": "50guwegkklle72t6",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T21:42:25.529Z"
+    },
+    {
+      "id": "50guwa1wklle8erm",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T21:43:27.681Z"
+    },
+    {
+      "id": "50guw8qokllei3iz",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T21:50:59.674Z"
+    },
+    {
+      "id": "50guw61ckllekc27",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T21:52:44.046Z"
+    },
+    {
+      "id": "50guw5qsklleqh1g",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T21:57:30.435Z"
+    },
+    {
+      "id": "50guweqgklleql86",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T21:57:35.861Z"
+    },
+    {
+      "id": "50guw7yoklleupvl",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T22:00:48.512Z"
+    },
+    {
+      "id": "50guwxwkllf2ojn",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T22:07:00.034Z"
+    },
+    {
+      "id": "50guw1kgkllf2son",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T22:07:05.398Z"
+    },
+    {
+      "id": "50guw6ygkllf67fp",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T22:09:44.484Z"
+    },
+    {
+      "id": "50guw9q0kllfg0ic",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T22:17:22.067Z"
+    },
+    {
+      "id": "50guwbc4kllfld66",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T22:21:31.757Z"
+    },
+    {
+      "id": "50guw840kllfnqle",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T22:23:22.465Z"
+    },
+    {
+      "id": "50guwanwkllfnyaa",
+      "type": "income",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T22:23:32.433Z"
+    },
+    {
+      "id": "50guwao0kllfs6jd",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T22:26:49.752Z"
+    },
+    {
+      "id": "50guwr8kllfuu2h",
+      "type": "expense",
+      "name": "WORK",
+      "sum": 400,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T22:28:53.560Z"
+    },
+    {
+      "id": "50guw6m0kllg3pw7",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T22:35:48.054Z"
+    },
+    {
+      "id": "50guw8m8kllgafcg",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T22:41:00.975Z"
+    },
+    {
+      "id": "50guw9gkkllgarwl",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T22:41:17.252Z"
+    },
+    {
+      "id": "50guwba0kllggvv9",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T22:46:02.324Z"
+    },
+    {
+      "id": "50guwc4gkllghfpt",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T22:46:28.048Z"
+    },
+    {
+      "id": "50guwen0kllgk2v5",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T22:48:31.360Z"
+    },
+    {
+      "id": "50guw9pgkllgl3tf",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T22:49:19.250Z"
+    },
+    {
+      "id": "50guwc0ckllgl99e",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T22:49:26.305Z"
+    },
+    {
+      "id": "50guw93skllgn52j",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T22:50:54.186Z"
+    },
+    {
+      "id": "50guw8aokllgnzlk",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T22:51:33.751Z"
+    },
+    {
+      "id": "50guw8r0kllgvdfi",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T22:57:18.269Z"
+    },
+    {
+      "id": "50guwa90kllh2ajx",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T23:02:41.132Z"
+    },
+    {
+      "id": "50guwbcckllh459d",
+      "type": "expense",
+      "name": "1",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T23:04:07.584Z"
+    },
+    {
+      "id": "50guwbv4kllh7yu0",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "50guw8b4kllh7jf6",
+      "user_id": "1",
+      "created_at": "2021-02-25T23:07:05.879Z"
+    },
+    {
+      "id": "50guwbpkkllhb3dt",
+      "type": "expense",
+      "name": "new",
+      "sum": 1500,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2021-02-25T23:09:31.744Z"
+    }
+  ]
+}

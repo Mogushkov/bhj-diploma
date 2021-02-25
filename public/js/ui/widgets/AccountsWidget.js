@@ -12,9 +12,9 @@ class AccountsWidget {
    * Если переданный элемент не существует,
    * необходимо выкинуть ошибку.
    * */
-  constructor( element ) {
-    if ( !element ) {
-      throw new Error( 'Элемент не существует' );
+  constructor(element) {
+    if (!element) {
+      throw new Error('Элемент не существует');
     }
     this.element = element;
     this.currentAccountId = null;
@@ -31,21 +31,19 @@ class AccountsWidget {
    * вызывает AccountsWidget.onSelectAccount()
    * */
   registerEvents() {
-    this.element.addEventListener('click', e => {
+    const createAccount = this.element.getElementsByClassName('create-account')[0];
+    createAccount.addEventListener('click', (e) => {
       e.preventDefault();
-      const createAccount = e.target.closest('.create-account');
-
-      if ( createAccount ) {
-        const modal = App.getModal('createAccount');
-        return modal.open();
-      }
-
-      const selectedAccount = e.target.closest('.account');
-
-      if (selectedAccount){
-        this.onSelectAccount(selectedAccount);
-      }
+      App.getModal('createAccount').open();
     });
+    const accountParent = document.getElementsByClassName('accounts-panel')[0];
+    accountParent.addEventListener('click', (e) => {
+      e.preventDefault();
+      const account = e.target.closest('.account');
+      if (account) {
+        this.onSelectAccount(account);
+      }
+    })
   }
 
   /**
@@ -59,19 +57,21 @@ class AccountsWidget {
    * метода renderItem()
    * */
   update() {
-    if (!User.current()) {
-      return;
+    const currentUser = User.current();
+    if (currentUser) {
+      Account.list(currentUser, (err, response) => {
+        if (err === null) {
+          if (response.success) {
+            this.clear();
+            for (let acct of response.data) {
+              this.renderItem(acct);
+            }
+          } else {
+            alert(JSON.stringify(response.error));
+          }
+        }
+      });
     }
-    Account.list(User.current(), (err, response) => {
-      if (err){
-        return;
-      }
-      if (!response.data){
-        return;
-      }
-      this.clear();
-      this.renderItem(response.data);
-    });
   }
 
   /**
@@ -80,7 +80,9 @@ class AccountsWidget {
    * в боковой колонке
    * */
   clear() {
-    [...this.element.querySelectorAll( '.account' )].forEach( item => item.remove());
+    this.element.querySelectorAll('.account').forEach((account) => {
+      account.remove();
+    });
   }
 
   /**
@@ -90,27 +92,13 @@ class AccountsWidget {
    * счёта класс .active.
    * Вызывает App.showPage( 'transactions', { account_id: id_счёта });
    * */
-  onSelectAccount( element ) {
-    if ( this.currentAccountId ) {
-      const account = this.element
-          .querySelector( `.account[data-id="${this.currentAccountId}"]` );
-      if (account) {
-        account.classList.remove( 'active' );
-      }
-      else {
-        this.currentAccountId = null;
-      }
+  onSelectAccount(element) {
+    const accountActive = document.querySelector('.account.active');
+    if (accountActive) {
+      accountActive.classList.remove('active');
     }
-
-    element.classList.add( 'active' );
-
-    const { id } = element.dataset;
-
-    this.currentAccountId = id;
-
-    App.showPage('transactions', {
-      account_id: id
-    });
+    element.classList.add('active');
+    App.showPage('transactions', { account_id: element.dataset.id });
   }
 
   /**
@@ -119,13 +107,12 @@ class AccountsWidget {
    * item - объект с данными о счёте
    * */
   getAccountHTML(item){
-    return `
-      <li class="account" data-id="${ item.id }">
-          <a href="#">
-              ${ item.name } / ${ item.sum } ₽
-          </a>
-      </li>
-    `;
+    return `<li class="account" data-id="${item.id}">
+    <a href="#">
+    <span>${item.name}</span> /
+    <span>${item.sum}</span>
+    </a>
+    </li>`;
   }
 
   /**
@@ -135,13 +122,6 @@ class AccountsWidget {
    * и добавляет его внутрь элемента виджета
    * */
   renderItem(data){
-    data.forEach(item => {
-      const {name, id} = item,
-          sum = item.sum.toLocaleString('en'),
-          html = this.getAccountHTML({
-            name, id, sum
-          });
-      this.element.insertAdjacentHTML('beforeend', html);
-    });
+    this.element.insertAdjacentHTML('beforeend', this.getAccountHTML(data));
   }
 }
